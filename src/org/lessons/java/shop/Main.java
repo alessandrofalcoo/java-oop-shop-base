@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Product product = new Product();
-        Scanner scan = new Scanner(System.in);
+        Scanner inputName = new Scanner(System.in);
         System.out.println("Inserisci il nome del prodotto: ");
-        product.name = scan.nextLine();
-        scan.close();
+        product.name = inputName.nextLine();
+        inputName.close();
         product.setCode();
         product.setPrice();
         product.setFullPrice();
